@@ -19,3 +19,9 @@ const hotelSlider = new Swiper('.hotel-slider', {
       prevEl: '.reviews-slider__button--prev',
     }
   });
+
+  const menuButton = document.querySelector('.menu-button');
+  menuButton.addEventListener('click', function(){
+    console.log('open menu')
+    document.querySelector('.navbar-bottom').classList.toggle('navbar-bottom__visible')
+  })
